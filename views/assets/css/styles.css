@@ -1,0 +1,77 @@
+html{
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body{
+  animation: bgcolor 20s infinite ease-in-out;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.content{
+  width: 100%;
+  margin: 0 auto;
+  /* margin: 10% auto auto auto; */
+}
+
+.logo-div{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  margin: 0 auto;
+  width: 600px;
+}
+
+.button{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.buttons-div{
+  margin: 20px auto;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+}
+
+.button-child{
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+}
+
+.button{
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: .2em;
+  background-color: #4b4d4d;
+  color: white;
+  font-size: 2.5em;
+}
+
+@-webkit-keyframes bgcolor{0%{background-color:#45a3e5}17%{background-color:#3cc}34%{background-color:#66bf39}51%{background-color:#ffa602}67%{background-color:#eb670f}84%{background-color:#f35}100%{background-color:#45a3e5}}
+@keyframes bgcolor{0%{background-color:#45a3e5}17%{background-color:#3cc}34%{background-color:#66bf39}51%{background-color:#ffa602}67%{background-color:#eb670f}84%{background-color:#f35}100%{background-color:#45a3e5}}
+
+@media only screen and ( max-width: 600px){
+  .logo{
+    width: 100%;
+  }
+  .buttons-div{
+    display: block;
+  }
+  .button-child{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
